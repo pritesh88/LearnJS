@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Objects</title>
+
+      <script>
+            //   const product = {
+            //       name : 'socks',
+            //       price : 1090
+
+            //   };
+
+            //   console.log(product);
+            //   console.log(product.name);
+            //   console.log(product.price);
+
+            //   product.name = 'cotton socks';
+            //   console.log(product); 
+
+            //   product.newProperty = true;
+            //   console.log(product);
+
+            //   delete product.newProperty;
+            //   console.log(product);
+
+         /*   const product2 = {
+                  name: 'shirt',
+                  'delivery-time': '1 day',
+                  rating: {
+                        stars: 4.5,
+                        count: 87
+                  },
+                  fun: function function1() {
+                        console.log('function inside object');
+                  }
+            };
+            console.log(product2);
+
+            //dot notation
+            console.log(product2.name);
+            // bracket notation 
+            console.log(product2['name']);
+            console.log(product2['deliver-time']);
+
+            console.log(product2.rating.count);
+            product2.fun();
+
+            // built in objects 
+
+            console.log(JSON.stringify(product2));
+            const jsonString = JSON.stringify(product2);
+
+            //converting again to javascript object 
+
+            JSON.parse(jsonString);
+            console.log(JSON.parse(jsonString));
+    
+*/
+      
+// objects and references 
+
+       console.log('hello'.length);
+       console.log('hello'.toUpperCase());
+   
+       // objects are references and in javascript objects creates a references that points out the values of the object
+
+       const object1 = {
+            message: 'hello'
+        
+       };
+       const object2 = object1;
+// Here,  object2 is the referece of object 1 so if message 1 is modified it will affect object too
+       object1.message = 'Good job!';
+       console.log(object1);
+       console.log(object2);
+
+       // unlick object 1&2 if the message is same of object 3 yet it will show false value because 
+       // internally , javascript doesnt create a copy of the object but the copy of references so 
+         // it will show false value .
+
+       const object3 ={
+             message: 'Good job!'
+       };
+
+       console.log(object3 === object1);
+       console.log(object2 === object1);
+  
+       
+       const object4 ={
+             message: 'Good job!',
+             price: 799
+       };
+
+       //const message = object4.message;
+       const{message,price} = object4;
+       console.log(message);
+       console.log(price);
+
+      const object5 ={
+            // message: message
+            message,
+            // method: function function1(){
+            //       console.log('method');
+            // }
+            method(){
+                  console.log('method');
+            }
+      };
+      console.log(object5);
+      object5.method();
+
+       
+
+</script>
+</head>
+  
+     
+     
+
+
+<body>
+   
+
+  <!--In this lesson : 
+      1. Objects =group related values together
+      2. Added a score to Rock Paper Scissors
+      3. Build- in Objects (JSON LOCAL STORAGE)
+      4. More details(null, auto-boxing , references)
+      5. Shortcuts (destructing , shorthand property, 
+         shorthand method)-->
+
+
+</body>
+
+</html>
+
+
+  
